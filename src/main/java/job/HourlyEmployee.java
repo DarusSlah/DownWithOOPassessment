@@ -8,5 +8,11 @@ public class HourlyEmployee extends Employees{
         this.hourlyRate = hourlyRate;
         this.hoursWorked = hoursWorked;
 
+
+    }
+    @Override
+    public double calculatePay(){
+        return hourlyRate * hoursWorked;
+
     }
 }

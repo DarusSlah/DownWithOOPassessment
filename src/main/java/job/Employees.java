@@ -1,14 +1,28 @@
 package job;
 
-public class Employees extends People{
-    private int employeeId;
+
+
+public abstract class Employees extends People {
+
+
+    private static int employeeId;
+
     public Employees(String name) {
         super(name);
-        this.employeeId = ;
+     this.id = ;
     }
 
     public int getEmployeeId() {
+
         return employeeId;
     }
-    public abstract double totalPay
+    public abstract double calculatePay();
+    public void printBadge(){
+
+        System.out.println(getName() + ":" + "\n"+ "EmployeeID: " + getEmployeeId());
+    }
+
+    public generateId(){
+
+    }
 }
